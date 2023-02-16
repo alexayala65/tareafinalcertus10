@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+             * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;              
+             }
+             body {
+
+            background: linear-gradient(90deg, rgb(15, 9, 121) 0%, rgb(56, 56, 145) 24%, rgba(0,212,255,1) 100%);
+             }
+           /* ----------- formato  de   registro  ------------*/
+             .form-register{
+                width: 400px;
+                background: peru;
+                padding: 30px;
+                margin: auto;
+                margin-top: 100px;
+                border-radius: 12px;
+                font-family: 'calibri';
+                color: white;
+                box-shadow: 8px 14px 40px blue;
+
+             }
+             .form-register  h4{
+                    font-size: 22px;
+                    margin-bottom: 20px;
+             }
+             .controls{
+                     width: 100%;
+                     background: cornflowerblue;
+                     padding: 10px;
+                     border-radius: 5px;
+                     margin-bottom: 16px;
+                     border: 3px  solid darkgreen;
+                     font-family: 'calibri';
+                     font-size: 18px;
+             }
+
+             .form-register .botones:hover{
+               color: rgb(184, 235, 44);
+               text-decoration: underline;
+               background-color: red;
+               cursor: pointer;
+             }
+             /*  --------formato de campos---------*/
+             .condicion {
+               font-size: 30px;
+             }
+             
+             .botones{
+               font-size: 25px;
+               border-radius: 10px;
+               text-align: center;
+             }
+             
+    </style>
+</head>
+<body>
+      <section class="form-register">
+       <form action="cliente">
+           <h4>REGISTRO DE FORMULARIO</h4>
+           <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese  Nombre">
+           <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese  Apellidos">
+           <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese  Correo" value="@">
+           <input class="controls" type="password" name="password" id="password" placeholder="Ingrese  Password">
+
+            <h2>Estoy  de acuerdo : </h2>
+
+            <label class="condicion" for="condicion">Terminos y condiciones</label>
+            <input id="consulta" name="consulta" type="checkbox">
+
+            <input class ="botones"  type="submit" value="Registrar Cliente ">
+            
+      </form>
+         </section>
+
+</body>
+</html>

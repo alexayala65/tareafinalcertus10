@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catalogo 2023</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="interfaz.css" />
+</head>
+
+<body onload="primeraFuncion()">
+
+  <figure class="text-center">
+
+    <h1 class="display-1">Venta de Computadoras 2023</h1>
+
+  </figure>
+
+    <!--    estrucutura  de  pagina de inicio bootstrap  -->
+
+  <div class="container my-3">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="text-center">
+          <div class="caja1">
+            <img src="banner.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+
+    </div>
+           <!-- -----------------Bootstrap --------------------------->
+    <div class="container">
+      <div class="row align-items-start">
+        <div class="col">
+          <p class="h4"> <a href="oficina.html">COMPUTADORAS OFICINA</a> </p>
+        </div>
+        <div class="col">
+          <p class="h4"> <a href="gamer.html">COMPUTADORAS GAMER</a> </p>
+        </div>
+        <div class="col">
+          <p class="h4"> <a href="laptop.html">COMPUTADORAS LAPTOP</a> </p>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col">
+          <p class="forma1"> Una supercomputadora es el tipo de computadora más potente y más rápido que existe en un
+            momento dado.
+            Estas máquinas están diseñadas para procesar enormes cantidades de información en poco tiempo y
+            son dedicadas a una tarea específica (científica, militar, etc.) Asimismo son las más caras, sus
+            precios alcanzan los $ 30 millones de dólares y más; y cuentan con un control
+            de temperatura especial, para disipar el calor que algunos componentes pueden alcanzar
+            y cuentan con un control
+            de temperatura especial, para disipar el calor que algunos componentes pueden alcanzar
+          </p>
+        </div>
+        <div class="col">
+          <p class="forma1">
+            Al ser los videojuegos en lo técnico un tipo de programa complejo que se
+            mantiene activo desde que se ejecuta y se sostiene de muchísimos procesos
+            simultáneos (el renderizado del escenario o mundo que se está viendo, las
+            fórmulas matemáticas que se realizan cada segundo para determinar valores
+            como el movimiento o el daño de un objeto, hasta las operaciones que permiten
+            ejecutar comandos como mantener disparando al presionar un botón o decirle al
+            juego que el jugador ha pasado de estar a pie a un vehículo) juego que el
+            jugador ha pasado de
+          </p>
+        </div>
+        <div class="col">
+          <p class="forma1">
+            Una laptop es una computadora portátil de peso y tamaño ligero, su tamaño es aproximado
+            al de un portafolio (hay más pequeñas como Palmtop y Handheld). Ésta pertenece al grupo
+            de las computadoras personales, las cuales son sistemas de computación relativamente
+            pequeños y de bajo costo, también llamados microprocesadores.
+
+            La laptop es un equipo compuesto por una pantalla líquida, alimentada con baterías o corriente alterna,
+            puede durar más de dos horas de funcionamiento,
+            juego que el jugador ha pasado de estar a pie a un vehículo)
+          </p>
+        </div>
+      </div>
+      <!--     --------  imagenes  del  catalogo   --------------->
+      <div class="row align-items-end">
+        <div class="col">
+          <img class="vista" src="imagenes/oficina.jpg" class="img-thumbnail" alt="">
+        </div>
+        <div class="col">
+          <img class="vista" src="imagenes/gamer.png" class="img-thumbnail" alt="">
+        </div>
+        <div class="col">
+          <img class="vista" src="imagenes/laptop.jpg" class="img-thumbnail" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------------Bootstrap --------------------------->
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalEntrada" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="imagenes/oferta22.png">
+
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerra</button>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+<!-- -----------------java  script--------------------------->
+
+    <script src="js/bootstrap.js"></script>
+    <script>
+      function primeraFuncion() {
+
+        const modalEntrada = new bootstrap.Modal("#modalEntrada");
+
+        modalEntrada.show();
+
+      }
+    </script>
+
+
+
+</body>
+
+</html>
