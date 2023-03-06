@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+          * {
+              margin: auto;
+              padding: 0;
+          }
+        #botellas {
+             width: 1200px;
+             height: 900px;
+             background-color: aqua;
+             box-shadow: 12px 12px 12px black;
+             border-radius: 25px;
+         }
+         
+         #gaseosa1 {
+             width: 350px;
+             height: 350px;
+             background-image: url("./imagenes/gaseosa1.jpg");
+             border-radius: 20px;
+             border:5px solid black;
+             background-size: cover;
+             float:left;
+             margin: 15px;
+
+         }
+         #gaseosa2 {
+             width: 350px;
+             height: 350px;
+             background-image: url("./imagenes/gaseosa2.jpg");
+             border-radius: 20px;
+             border:5px solid black;
+             background-size: cover;
+             float:left;
+             margin: 15px;
+             
+         }
+         #gaseosa3 {
+             width: 350px;
+             height: 350px;
+             background-image: url("./imagenes/gaseosa3.jpg");
+             border-radius: 20px;
+             border:5px solid black;
+             background-size: cover;
+             float:left;
+             margin: 15px;   
+         }
+         #boton1{
+             width: 200px;
+             height: 50px;
+             background-color: white;
+             color: red;
+             border-radius: 25px;
+             border: 3px solid red;
+             float:left;
+             font-size: 30px;
+             margin-left: 100px;
+
+         }
+         #boton2{
+             width: 200px;
+             height: 50px;
+             background-color: white;
+             color: red;
+             border-radius: 25px;
+             border: 3px solid red;
+             float:left;
+             font-size: 30px;
+             margin-left:  170px;
+
+         }
+         #boton3{
+             width: 200px;
+             height: 50px;
+             background-color: white;
+             color: red;
+             border-radius: 25px;
+             border: 3px solid red;
+             float:left;
+             font-size: 30px;
+             margin-left: 200px;
+
+         }
+
+         #boton1:hover {
+            width: 200px;
+             height: 50px;
+             background-color: red;
+             color: white;
+             border-radius: 25px;
+             border: 3px solid red;
+             float:left;
+             font-size: 30px;
+             margin-left: 100px;
+             cursor: pointer;
+         }
+         #boton1{         
+             transition: color 0.2s linear 0.1s;
+         }
+         #boton2:hover {
+            width: 200px;
+             height: 50px;
+             background-color: red;
+             color: white;
+             border-radius: 25px;
+             border: 3px solid red;
+             float:left;
+             font-size: 30px;
+             margin-left: 170px;
+             cursor: pointer;
+         }
+         #boton2{         
+             transition: color 0.2s linear 0.1s;
+         }
+
+         #boton3:hover {
+            width: 200px;
+             height: 50px;
+             background-color: red;
+             color: white;
+             border-radius: 25px;
+             border: 3px solid red;
+             float:left;
+             font-size: 30px;
+             margin-left: 200px;
+             cursor: pointer;
+         }
+         #boton3{         
+             transition: color 0.2s linear 0.1s;
+         }
+
+         #gaseosa4 {
+             width: 350px;
+             height: 350px;
+             background-image: url("./imagenes/gaseosa4.jpg");
+             border-radius: 20px;
+             border:5px solid black;
+             background-size: cover;
+             float:left;
+             margin: 15px;
+
+         }
+         #gaseosa5 {
+             width: 350px;
+             height: 350px;
+             background-image: url("./imagenes/gaseosa5.jpg");
+             border-radius: 20px;
+             border:5px solid black;
+             background-size: cover;
+             float:left;
+             margin: 15px;
+             
+         }
+         #gaseosa6 {
+             width: 350px;
+             height: 350px;
+             background-image: url("./imagenes/gaseosa6.jpg");
+             border-radius: 20px;
+             border:5px solid black;
+             background-size: cover;
+             float:left;
+             margin: 15px;   
+         }
+
+         #boton4{
+             width: 200px;
+             height: 50px;
+             background-color: white;
+             color: red;
+             border-radius: 25px;
+             border: 3px solid red;
+             float:left;
+             font-size: 30px;
+             margin-left: 100px;
+
+         }
+         #boton5{
+             width: 200px;
+             height: 50px;
+             background-color: white;
+             color: red;
+             border-radius: 25px;
+             border: 3px solid red;
+             float:left;
+             font-size: 30px;
+             margin-left:  170px;
+
+         }
+         #boton6{
+             width: 200px;
+             height: 50px;
+             background-color: white;
+             color: red;
+             border-radius: 25px;
+             border: 3px solid red;
+             float:left;
+             font-size: 30px;
+             margin-left: 200px;
+
+         }
+
+         #boton4:hover {
+            width: 200px;
+             height: 50px;
+             background-color: red;
+             color: white;
+             border-radius: 25px;
+             border: 3px solid red;
+             float:left;
+             font-size: 30px;
+             margin-left: 100px;
+             cursor: pointer;
+         }
+         #boton4{         
+             transition: color 0.2s linear 0.1s;
+         }
+         #boton5:hover {
+            width: 200px;
+             height: 50px;
+             background-color: red;
+             color: white;
+             border-radius: 25px;
+             border: 3px solid red;
+             float:left;
+             font-size: 30px;
+             margin-left: 170px;
+             cursor: pointer;
+         }
+         #boton5{         
+             transition: color 0.2s linear 0.1s;
+         }
+
+         #boton6:hover {
+            width: 200px;
+             height: 50px;
+             background-color: red;
+             color: white;
+             border-radius: 25px;
+             border: 3px solid red;
+             float:left;
+             font-size: 30px;
+             margin-left: 200px;
+             cursor: pointer;
+         }
+         #boton6{         
+             transition: color 0.2s linear 0.1s;
+         }
+
+        #reporte{
+            width: 1200px;
+            height: 200px;
+            background-color: white;
+            border-radius: 25px;
+            box-shadow: 12px 12px 12px black;
+            margin-top: 20px;
+
+        }
+         #imgCarrusel {
+             width: 110px;
+             height: 110px;
+             background-size: cover;
+             border: 10px;
+             display: inline-block;
+         }
+         #imgCarrusel2 {
+             width: 110px;
+             height: 110px;
+             background-size: cover;
+             border: 10px;
+             display: inline-block;}
+
+        #imgCarrusel4 {
+             width: 110px;
+             height: 110px;
+             background-size: cover;
+             border: 10px;
+             display: inline-block;}
+
+         input{
+             width: 120px;
+             height: 80px; 
+             display: inline-block;
+             font-size: 100px;  
+         }
+         #salida {
+             width: 1000px;
+             height: 200px;
+             background-color: aqua;
+             border-radius: 25px;
+             box-shadow: 12px 12px 12px black;
+             align-items: center;
+             margin-top: 20px;
+
+         }
+        #final{
+              width: 200px;
+              height: 80px;
+              background-color: blueviolet;
+              color:white;
+              border-radius: 24px;
+              font-size: 25px;
+              cursor: pointer;
+              margin:  15px 15px 15px;
+        }
+        #total{
+             width: 200px;
+             min-height: 80px;
+             background-color: yellow;
+             color: brown;
+             border-radius: 24px;
+             align-items: center;
+             margin: 15px 30px 30px 30px;
+        }
+        p{
+            background-color: blue;
+            display: inline-block;
+            
+            align-content: center;
+        }
+
+ </style>
+ <script>
+    let producto = 0;
+    let producto2 =0;
+    let producto4 =0;
+    let total =0;
+
+    function monto(seleccion) {
+
+                 if(seleccion == 'boton1')
+                     { producto = producto + 1
+
+                     document.getElementById('resultado1').value = producto;
+
+                    }
+            
+                 if(seleccion == 'boton2')
+                     { producto2 = producto2 + 1
+
+                     document.getElementById('resultado2').value = producto2;
+                    }
+
+
+
+                if(seleccion == 'boton4')
+                     { producto4 = producto4 + 1
+
+                      document.getElementById('resultado4').value = producto4;
+
+                     }
+            }
+            function final()
+            {
+                total = producto * 2 + producto2 * 3 + producto4 * 4;
+                document.getElementById('total').value = total;
+               
+            }
+
+</script>
+</head>
+<body>
+    <div  id="botellas">
+            <div id="gaseosa1"></div>
+            <div id="gaseosa2"></div>
+            <div id="gaseosa3"></div>
+
+        <div id="lista1">
+                <button name="agregar1" type ="button" id="boton1" onclick="monto('boton1')">Agregar</button>
+                <button name="agregar2" type ="button" id="boton2" onclick="monto('boton2')">Agregar</button>
+                <button name="agregar3" type ="button" id="boton3">Agregar</button>
+        </div>
+            <div id="gaseosa4"></div>
+            <div id="gaseosa5"></div>
+            <div id="gaseosa6"></div>
+
+        <div id="lista2">
+                <button name="agregar4" type ="button" id="boton4" onclick="monto('boton4')">Agregar</button>
+                <button name="agregar5" type ="button" id="boton5">Agregar</button>
+                <button name="agregar6" type ="button" id="boton6">Agregar</button>
+        </div>
+      </div>   
+
+         <div id="reporte">
+
+             <img id="imgCarrusel" src="./imagenes/gaseosa1.jpg" alt="primera  bebida" title="sabor refrescante">
+             <input type="number" id="resultado1">
+
+             <img id="imgCarrusel2" src="./imagenes/gaseosa2.jpg" alt="primera  bebida" title="sabor refrescante">
+             <input type="number" id="resultado2">
+             
+             <img id="imgCarrusel4" src="./imagenes/gaseosa4.jpg" alt="primera  bebida" title="sabor refrescante">
+             <input type="number" id="resultado4">
+         </div>
+          
+         <div  id="salida">
+             <p>
+            <button type="button" id="final" onclick="final()">PAGO TOTAL ----</button>
+             <input  type="number" id="total">
+            </p>
+         </div>
+          
+        
+</body>
+</html>

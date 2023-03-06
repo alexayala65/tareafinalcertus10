@@ -9,7 +9,9 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" href="css/bootstrap.css" />
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="interfaz.css" />
+   <link rel="stylesheet" href="interfaz.css">
+
+
 </head>
 
 <body onload="primeraFuncion()">
@@ -24,10 +26,15 @@
 
   <div class="container my-3">
     <div class="row">
-      <div class="col-sm-12">
-        <div class="text-center">
-          <div class="caja1">
-            <img src="banner.jpg" class="img-fluid" alt="">
+       <div class="col-sm-12">
+          <div class="text-center">
+            <div class="caja1">
+                <img src="banner.jpg" class="img-fluid" alt="">
+           </div>
+          <div  class="col">
+           <p class="usa">   Usuario.. <input type="text"  id="usuario" placeholder="Si eres Usuario"> </p>  <br>
+           <p class="usa">   Password  <input type="password" id="pass" placeholder="Ingresa  Contraseña"></p>
+           <p><input type="button" value="Ingresar Usuario" onClick="chequeo()"></p>
           </div>
         </div>
       </div>
@@ -113,7 +120,7 @@
           </div>
 
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerra</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
 
           </div>
 
@@ -133,8 +140,22 @@
 
       }
     </script>
-
-
+   <script>
+       function chequeo() {
+       //  manejo de   doom
+         
+        let x = document.getElementById("usuario").value;
+        let y = document.getElementById("pass").value;
+        
+        if ( (x=="pedro") && (y=="1234") )
+                 {x= " ";  y = " ";
+                 window.location.href="premios2023.html";
+                 }
+            else {
+                  window.location.href="catalogo.html";
+            }
+    }
+</script>
 
 </body>
 

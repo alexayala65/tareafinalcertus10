@@ -76,3 +76,13 @@ p > a {
 .ancho {
     margin-left: 20%;
 }
+.usa {
+    color: black;
+    font-size: 25px;
+    background-color: yellow;
+}
+h1 {
+    font-size: 30px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+}

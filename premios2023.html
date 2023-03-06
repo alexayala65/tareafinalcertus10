@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ea5455;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.container {
+  width: 800px;
+  /* background-color: #f1f1f1; */
+	/* margin: auto; */	
+	box-shadow: 7px 13px 37px rgba(0, 0, 0, .5);
+}
+section p {
+  overflow: hidden;
+  max-height: 0;
+  text-align: justify;
+  font-family: "Courier New", Courier, monospace;
+  background: #e4e4e4;
+  transition: all 0.2s ease-in;
+}
+
+section a {
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #212121;
+  border-bottom: 2px solid gray;
+  color: white;
+}
+
+section:target p {
+  max-height: 120px;
+  padding: 10px;
+}
+
+#titulo { font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #e4e4e4;
+    color:blue; 
+
+}
+.bebidas{
+       width: 800px;
+       height: 100px;
+       background-color: rgb(54, 236, 109);
+       position: absolute;
+       top: 600px;
+       font-size: 30PX;
+       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+       text-align: center;
+       border-radius: 20px;
+}
+
+
+ </style>
+</head>
+<body>
+    <div class="container">
+      <p id="titulo">PROXIMAMENTE   PREMIOS   PARA  NUESTROS  CLIENTES</p>
+		<section id="menu1">
+			<a href="#menu1"> Promocion Zapatillas</a>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, aspernatur delectus 
+        soluta quibusdam et voluptatum, laborum perspiciatis natus nostrum alias quos 
+        cupiditate, necessitatibus autem ex. Animi fugiat veritatis dignissimos commodi?</p>
+		</section>
+		<section id="menu2">
+			<a href="#menu2">Promocion peliculas</a>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, aspernatur delectus 
+        soluta quibusdam et voluptatum, laborum perspiciatis natus nostrum alias quos 
+        cupiditate, necessitatibus autem ex. Animi fugiat veritatis dignissimos commodi?</p>
+		</section>
+		<section id="menu3">
+			<a href="#menu3">Promocion Juegos Dinosaurios</a>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, aspernatur delectus
+         soluta quibusdam et voluptatum, laborum perspiciatis natus nostrum alias quos 
+         cupiditate, necessitatibus autem ex. Animi fugiat veritatis dignissimos commodi?</p>
+		</section>
+		<section id="menu4">
+			<a href="#menu4">Promocion Revistas Comics</a>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, aspernatur delectus
+         soluta quibusdam et voluptatum, laborum perspiciatis natus nostrum alias quos 
+         cupiditate, necessitatibus autem ex. Animi fugiat veritatis dignissimos commodi?</p>
+		</section>
+    <section id="menu5">
+			<a href="#menu5">Formulario Socio Exclusivo</a>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, aspernatur delectus
+         soluta quibusdam et voluptatum, laborum perspiciatis natus nostrum alias quos 
+         cupiditate, necessitatibus autem ex. Animi fugiat veritatis dignissimos commodi?</p>
+		</section>
+
+	</div>
+  <div class="bebidas" > <br>  <a href="bebidas.html">   BEBIDAS  A   MENOR  COSTO INGRESA</a> </div>
+
+</body>
+</html>
