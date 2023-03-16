@@ -78,11 +78,16 @@ p > a {
 }
 .usa {
     color: black;
-    font-size: 25px;
+    font-size: 22px;
     background-color: yellow;
 }
 h1 {
     font-size: 30px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: italic;
+}
+p.nuevo{
+
+    text-align: center;
+    margin-top: 70px;
 }

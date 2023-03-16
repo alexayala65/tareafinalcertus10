@@ -68,7 +68,7 @@
            <h4>REGISTRO DE FORMULARIO</h4>
            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese  Nombre">
            <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese  Apellidos">
-           <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese  Correo" value="@">
+           <input class="controls" type="text" name="correo" id="correo" placeholder="Ingrese Correo">
            <input class="controls" type="password" name="password" id="password" placeholder="Ingrese  Password">
 
             <h2>Estoy  de acuerdo : </h2>
@@ -76,10 +76,72 @@
             <label class="condicion" for="condicion">Terminos y condiciones</label>
             <input id="consulta" name="consulta" type="checkbox">
 
-            <input class ="botones"  type="submit" value="Registrar Cliente ">
+            <input type="button" class ="botones"  value="Registrar Cliente " onclick="tiene_numeros()">
+
+            <!-- type="submit" --> 
             
       </form>
          </section>
 
+         <script>
+                   
+                function tiene_numeros(){
+                    let x=0;
+                    let y = 0;
+
+                    let texto = " ";
+                    let texto2 = " ";
+                    let texto3 = " ";
+                    let numeros="0123456789";
+
+                    let vacio = "";
+
+                    texto=document.getElementById('nombres').value;
+                    texto2=document.getElementById('apellidos').value;
+                    texto3=document.getElementById('correo').value;
+                    
+                    let validarCorreo = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+
+                     
+                           if ( vacio == texto.length) alert("No Debe estar vacio el Nombre.");
+                           for(i=0; i<texto.length; i++){
+
+                                if (numeros.indexOf(texto.charAt(i),0)!=-1)
+                                     {
+                                   x=1;
+                                     } 
+                                   else {  
+                                   x=0;  }
+                                           
+                               }
+                         if ( vacio == texto2.length) alert("No Debe estar vacio el Apellido.");
+                         for(i=0; i<texto2.length; i++){
+                               if (numeros.indexOf(texto2.charAt(i),0)!=-1)
+                                    {                                
+                                      y=1;
+                                     } 
+                                      else { 
+                                           y=0;  
+                                    }                            
+                              }                                     
+                        if ( x == 1 )  {
+                                         document.getElementById('nombres').value = "";
+                                         alert("Debe  Contener Solo Letras,  no Numeros. EN EL CAMPO NOMBRE.");
+                                         x = 0;
+                                         }
+                        if ( y == 1 )  {
+                                          document.getElementById('apellidos').value = "";
+                                          alert("Debe Contener Solo Letras,  no numeros. EN El CAMPO APELLIDO.");
+                                          y = 0;
+                                        }        
+
+                       let  salida = validarCorreo.test(texto3);
+                       if    (!( salida == true))     
+                              { 
+                               document.getElementById('correo').value = "";
+                              alert("correo invalido");
+                             }
+                  }       
+         </script>
 </body>
 </html>

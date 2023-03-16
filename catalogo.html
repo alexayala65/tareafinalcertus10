@@ -25,21 +25,32 @@
     <!--    estrucutura  de  pagina de inicio bootstrap  -->
 
   <div class="container my-3">
-    <div class="row">
-       <div class="col-sm-12">
-          <div class="text-center">
-            <div class="caja1">
-                <img src="banner.jpg" class="img-fluid" alt="">
-           </div>
-          <div  class="col">
-           <p class="usa">   Usuario.. <input type="text"  id="usuario" placeholder="Si eres Usuario"> </p>  <br>
-           <p class="usa">   Password  <input type="password" id="pass" placeholder="Ingresa  Contraseña"></p>
-           <p><input type="button" value="Ingresar Usuario" onClick="chequeo()"></p>
+      <div class="row">
+          <div class="col-sm-12">
+             <div class="text-center">
+                 <div class="caja1">
+                      <img src="banner.jpg" class="img-fluid" alt="">
+                </div>
+             </div>
           </div>
-        </div>
       </div>
 
-    </div>
+      <div class="row">       
+             <div  class="col">
+                <p class="usa">   Usuario.. <input type="text"  id="usuario" placeholder="Si eres Usuario"> </p>  <br>
+                <p class="usa">   Password  <input type="password" id="pass" placeholder="Ingresa  Contraseña"></p>
+                <p><input type="button" value="Ingresar Usuario" onClick="chequeo()"></p>
+             </div>
+              <div  class="col">
+
+                 <p class="nuevo"><input type="button" value="Registrar Nuevo Usuario :" onClick="nuevoIngreso()"></p>
+             </div> 
+
+       </div>
+
+      
+
+  </div>
            <!-- -----------------Bootstrap --------------------------->
     <div class="container">
       <div class="row align-items-start">
@@ -86,7 +97,7 @@
 
             La laptop es un equipo compuesto por una pantalla líquida, alimentada con baterías o corriente alterna,
             puede durar más de dos horas de funcionamiento,
-            juego que el jugador ha pasado de estar a pie a un vehículo)
+            juego que el jugador ha pasado de estar a pie a un vehículo
           </p>
         </div>
       </div>
@@ -155,6 +166,13 @@
                   window.location.href="catalogo.html";
             }
     }
+
+     function nuevoIngreso()
+     {
+             window.location.href="formulario.html";
+
+     }
+
 </script>
 
 </body>
